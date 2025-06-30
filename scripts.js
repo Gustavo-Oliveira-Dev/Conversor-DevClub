@@ -10,9 +10,6 @@ function convertValues() {
     const currencyValueConverted = document.querySelector(".currency-value")
 
 
-
-
-
     const real = 1.0
     const dolarToday = 5.48
     const euroToday = 6.43
@@ -20,9 +17,6 @@ function convertValues() {
     const francoToday = 6.87
     const yuanToday = 0.76
     const ieneToday = 0.038
-
-
-
 
 
 
@@ -72,19 +66,11 @@ function convertValues() {
 
 
 
-
-
-
-
-
-
-
     if (currencySelect.value == "real")
         currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
         }).format(inputCurrencyValue / real)
-
 
 
     if (currencySelect.value == "dolar")
@@ -124,11 +110,7 @@ function convertValues() {
             currency: "JPY"
         }).format(inputCurrencyValue / ieneToday)
 
-
-
 }
-
-
 
 
 function changeCurrency() {
@@ -171,7 +153,6 @@ function changeCurrency() {
         currencyImgIn.src = "./assets/jp.png"
     }
 
-
     if (currencySelect.value == "real") {
         currencyName.innerHTML = "Real"
         currencyImg.src = "./assets/real.png"
@@ -207,10 +188,7 @@ function changeCurrency() {
         currencyImg.src = "./assets/jp.png"
     }
 
-
-
     convertValues()
-
 }
 
 currencySelect.addEventListener("change", changeCurrency)
