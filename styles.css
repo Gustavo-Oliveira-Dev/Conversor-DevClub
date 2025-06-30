@@ -21,8 +21,9 @@ body {
 }
 
 .logo {
-    width: 300px;
-    margin-left: 800px;
+    width: 500px;
+    margin-left: 1090px;
+    
     
 }
 
@@ -30,7 +31,7 @@ main {
     width: 375px;
     border-radius: 20px;
     background: #111e2e;
-    margin: -40px auto 20px;
+    margin: -490px auto 20px;
     padding: 44px 24px 23px;
 }
 
